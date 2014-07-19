@@ -1,0 +1,78 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%             Deimos Beamer/LaTeX Presentation Color Theme
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\mode<presentation>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document default font size
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{scrextend}
+\changefontsizes{9.5pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Colors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DefineNamedColor{named}{DeimosBlue}{RGB}{80,139,237}
+\DefineNamedColor{named}{DeimosBlueLight}{RGB}{194,226,244}
+
+\setbeamercolor{structure}{bg=black, fg=DeimosBlue}
+
+\setbeamercolor{section in toc}{fg=black,bg=white}
+\setbeamercolor{alerted text}{fg=DeimosBlue!80!DeimosBlueLight}
+\setbeamercolor*{palette primary}{fg=DeimosBlue!60!black,bg=DeimosBlueLight!30!white}
+\setbeamercolor*{palette secondary}{fg=DeimosBlue!70!black,bg=DeimosBlueLight!15!white}
+\setbeamercolor*{palette tertiary}{bg=DeimosBlue!80!black,fg=DeimosBlueLight!10!white}
+\setbeamercolor*{palette quaternary}{fg=DeimosBlue,bg=DeimosBlueLight!5!white}
+
+\setbeamercolor*{sidebar}{fg=DeimosBlue,bg=DeimosBlueLight!15!white}
+
+\setbeamercolor*{palette sidebar primary}{fg=DeimosBlue!10!black}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{fg=DeimosBlue!50!black}
+\setbeamercolor*{palette sidebar quaternary}{fg=DeimosBlueLight!10!white}
+
+%\setbeamercolor*{titlelike}{parent=palette primary}
+\setbeamercolor{titlelike}{parent=palette primary,fg=DeimosBlue}
+\setbeamercolor{frametitle}{bg=DeimosBlueLight!10!white}
+\setbeamercolor{frametitle right}{bg=DeimosBlueLight!60!white}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Blocks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Classic block
+\setbeamercolor{block title}{fg=white,bg=DeimosBlue}
+\setbeamercolor{block body}{fg=black,bg=DeimosBlueLight!30}
+\setbeamerfont{block title}{size=\footnotesize}
+\setbeamerfont{block body}{size=\footnotesize}
+% Usage :
+%\begin{block}{Normal block}
+%  Texte du block \texttt{Normal block}
+%\end{block}
+
+% Warning block
+\setbeamercolor{block title alerted}{fg=black,bg=red!70}
+\setbeamercolor{block body alerted}{fg=black,bg=red!20}
+% Usage :
+%\begin{alertblock}{Warning block}
+%  Texte du block \texttt{alertblock}
+%\end{alertblock}
+
+% Information block
+\setbeamercolor{block title example}{fg=black,bg=yellow!70}
+\setbeamercolor{block body example}{fg=black,bg=yellow!20}
+% Usage :
+%\begin{exampleblock}{Notes}
+%  Exemple de block \texttt{Notes}
+%\end{exampleblock}
+
+\mode
+<all>
